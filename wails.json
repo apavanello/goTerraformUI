@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "goTerraformUI",
+  "outputfilename": "goTerraformUI",
+  "frontend:install": "bun install",
+  "frontend:build": "bun run build",
+  "frontend:dev:watcher": "bun run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "ALEXANDRE PAVANELLO E SILVA",
+    "email": "apavanello@live.com"
+  }
+}

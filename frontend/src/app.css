@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased overflow-hidden m-0 p-0 h-screen w-screen select-none;
+  }
+}
+
+/* Svelte Flow customizations for Dark Theme */
+.svelte-flow {
+  background-color: #0f172a !important;
+  /* slate-900 */
+}
+
+.svelte-flow__node {
+  @apply rounded-md shadow-md bg-slate-800 border-slate-600 text-slate-200 transition-colors duration-200;
+}
+
+.svelte-flow__node.dimmed {
+  opacity: 0.04 !important;
+  pointer-events: none;
+}
+
+.svelte-flow__node.neighbor {
+  opacity: 0.85 !important;
+}
+
+.svelte-flow__node.highlight {
+  @apply ring-2 ring-emerald-500 shadow-emerald-900/50 shadow-lg;
+}
+
+.svelte-flow__handle {
+  @apply bg-emerald-500 w-3 h-3;
+}
+
+.svelte-flow__edge-path {
+  stroke: #475569 !important;
+  /* slate-600 */
+  stroke-width: 2 !important;
+}
